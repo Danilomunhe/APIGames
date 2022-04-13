@@ -1,0 +1,71 @@
+.colecaoDeJogos{
+    height: 100vh;
+    display: flex;
+    background-color: black;
+    overflow: auto;
+}
+.container-cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    gap: 15px;
+    overflow-y: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* .card{
+    display: flex ;
+    width: 380px;
+    height: 500px;
+    background-color: cornflowerblue;
+} */
+.card-content:hover{
+    transform: rotateY(180deg);
+}
+.card-content{
+    width: 380px;
+    height: 500px;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+.frente{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: crimson;
+    color: cyan;
+}
+.frente img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.atras{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: linear-gradient(red, black);
+    color: white;
+    transform: rotateY(180deg);
+    box-shadow: 0 0 0 10px gray;
+}
+.atras h2 {
+    text-align: center;
+    color: black;
+}
+.informacoes{
+    padding-top: 10px;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    font-size: 1.5rem;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
