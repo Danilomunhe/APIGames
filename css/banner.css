@@ -35,7 +35,7 @@
     height: 100%;
 }
 .barraDePesquisa #pesquisar{
-    width: 300px;
+    width: 100%;
     height: 100%;
     border: none;
     border-radius: 10px;
@@ -46,10 +46,13 @@
     transition: all 1s ease-in-out;
 }
 .barraDePesquisa #pesquisar a{
-   text-decoration: none;
-   color: beige;
-   width: 300px;
-height: 100%;
+    text-decoration: none;
+    color: beige;
+    width: 300px;
+    height: 100%;
+}
+button{
+    font-size: 1.5rem;
 }
 .barraDePesquisa #pesquisar:hover  {
     background-color: black;
@@ -85,5 +88,8 @@ height: 100%;
         text-transform: uppercase;
         transition: all 1s ease-in-out;
         margin-left: 15%;
+    }
+    button{
+        font-size: 1rem;
     }
 }
