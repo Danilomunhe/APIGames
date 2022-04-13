@@ -19,12 +19,15 @@ const gerarGeneros = (genero)=>{
 }
 const criarCardjogos = (jogo)=>{
 
-    if (jogo.platforms != null) {
+    // if (jogo.platforms != null) {
         const cardContent = document.createElement('div')
         cardContent.classList.add('card-content')
         cardContent.innerHTML =
-        `   <div class="frente">
+
+        `   
+        <div class="frente">
                 <img src="${jogo.background_image}" alt="Esse Jogo não possui foto">
+                <h2>${jogo.name}</h2>
             </div>
             <div class="atras">
                 <h2>${jogo.name}</h2>
@@ -32,7 +35,7 @@ const criarCardjogos = (jogo)=>{
                 <p>Data de Lançamento: ${jogo.released}</p>
                 <p>Genêro: ${jogo.genres.map(gerarGeneros)}</p>
                 <p>Nota no Metacritic: ${jogo.metacritic}</p>
-                <p>Plataformas: ${jogo.platforms.map(gerarPlataformas)}</p>
+                <p>Plataformas: ${jogo.platforms?.map(gerarPlataformas) ?? "fernando Leonid"}</p>
                 <p>Nota do público: ${jogo.rating}</p>
             </div>
             
@@ -40,7 +43,7 @@ const criarCardjogos = (jogo)=>{
         </div>`
     
         return cardContent
-}
+// }
 }
 const carregarJogos = async()=>{
     const container = document.getElementById('container-cards')

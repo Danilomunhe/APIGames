@@ -45,6 +45,18 @@
     height: 100%;
     object-fit: cover;
 }
+.card-content h2{
+    color: white;
+    position: absolute;
+    top: 0;
+    background-color: black;
+    transition: all 1s ease-in-out;
+    opacity: 1;
+}
+.card-content:hover h2{
+    opacity: 0;
+  
+}
 .atras{
     position: absolute;
     width: 100%;
@@ -69,4 +81,17 @@
     font-size: 1.5rem;
     padding-left: 20px;
     margin-bottom: 20px;
+}
+
+@media (max-width:720px){
+    .card-content{
+        width: 300px;
+        height: 400px;
+        transform-style: preserve-3d;
+        transition: all 1s ease-in-out;
+        cursor: pointer;
+    }
+    .card-content:hover{
+        transform: rotateY(180deg);
+    }
 }
