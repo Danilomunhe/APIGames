@@ -1,16 +1,17 @@
 .colecaoDeJogos{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     background-color: black;
-    overflow: auto;
+
 }
 .container-cards{
     width: 100%;
+    flex-grow: 1;
     display: flex;
     flex-wrap: wrap;
     margin-top: 150px;
     gap: 15px;
-    overflow-y: auto;
+    /* overflow-y: auto; */
     justify-content: space-around;
     align-items: center;
 }
