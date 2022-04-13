@@ -103,4 +103,15 @@
     .card-content .titulo{
         font-size: 0.8rem;
     }
+    .informacoes{
+        padding-top: 10px;
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        font-size: 1.5rem;
+        padding-left: 20px;
+        margin-bottom: 20px;
+    }
 }
