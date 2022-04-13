@@ -27,7 +27,9 @@ const criarCardjogos = (jogo)=>{
         `   
         <div class="frente">
                 <img src="${jogo.background_image}" alt="Esse Jogo não possui foto">
-                <h2>${jogo.name}</h2>
+                <div class="titulo">
+                    <h2>${jogo.name}</h2>
+                </div>
             </div>
             <div class="atras">
                 <h2>${jogo.name}</h2>
