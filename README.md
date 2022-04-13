@@ -13,6 +13,6 @@ O site pode ser acessado pelo link: [Danilo Munhe](https://danilomunhe.github.io
 * JavaScript
 
 ## Screenshot
-![image](https://user-images.githubusercontent.com/83726386/163229860-95da3c86-d4ff-47d8-81df-6e97d0a71a11.png)
-![image](https://user-images.githubusercontent.com/83726386/163229942-f3ea863b-f531-4497-906c-3fbe26cc1576.png)
+![image](https://user-images.githubusercontent.com/83726386/163230137-487472bc-8421-4a1e-9be3-3fb6d5eefcd4.png)
+![image](https://user-images.githubusercontent.com/83726386/163230099-096300d1-ab02-49c8-ab80-450b912f41e0.png)
 
