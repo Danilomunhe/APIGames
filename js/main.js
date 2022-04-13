@@ -56,7 +56,15 @@ const carregarJogos = async()=>{
 
    await container.replaceChildren(...gerarJogos)
 }
-
+document.addEventListener("keypress", function(e) {
+    if(e.key === 'Enter') {
+    
+        var btn = document.querySelector("#pesquisar");
+      
+      btn.click();
+    
+    }
+  });
 document.getElementById('pesquisar').addEventListener('click', carregarJogos)
 
 // const pesquisarModalJogo = async(jogo)=>{
